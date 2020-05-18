@@ -18,5 +18,5 @@ services:
       context: . 
       dockerfile: DockerfilePython
     expose:
-      - "5000"
-    command: gunicorn -w 1 app:APP -b :5000 --reload
+      - "8081"
+    command: gunicorn -w 1 app:APP -b :8081 --reload

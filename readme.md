@@ -17,27 +17,27 @@ python app.py
 
 ### Get All Request Records
 ```bash
-curl -X GET http://127.0.0.1:5000/request
+curl -X GET http://127.0.0.1:8081/request
 ```
 
 ### Get One Request Record
 ```bash
-curl -X GET http://127.0.0.1:5000/request/04cfc704-acb2-40af-a8d3-4611fab54ada
+curl -X GET http://127.0.0.1:8081/request/04cfc704-acb2-40af-a8d3-4611fab54ada
 ```
 
 ### Add A New Record
 ```bash
-curl -X POST http://127.0.0.1:5000/request -H 'Content-Type: application/json' -d '{"title":"Good & Bad Book", "email": "testuser3@test.com"}'
+curl -X POST http://127.0.0.1:8081/request -H 'Content-Type: application/json' -d '{"title":"Good & Bad Book", "email": "testuser3@test.com"}'
 ```
 
 ### Edit An Existing Record
 ```bash
-curl -X PUT http://127.0.0.1:5000/request -H 'Content-Type: application/json' -d '{"title":"edited Good & Bad Book", "email": "testuser4@test.com"}'
+curl -X PUT http://127.0.0.1:8081/request -H 'Content-Type: application/json' -d '{"title":"edited Good & Bad Book", "email": "testuser4@test.com"}'
 ```
 
 ### Delete A Record
 ```bash
-curl -X DELETE http://127.0.0.1:5000/request/04cfc704-acb2-40af-a8d3-4611fab54ada
+curl -X DELETE http://127.0.0.1:8081/request/04cfc704-acb2-40af-a8d3-4611fab54ada
 ```
 
 ## Unit Test with Nose
@@ -75,7 +75,7 @@ OK
 ![swagger.png](swagger.png)
 
 Hosted Locally
-http://127.0.0.1:5000/swagger/
+http://127.0.0.1:8081/swagger/
 
 ###
 Hosted via Heroku
