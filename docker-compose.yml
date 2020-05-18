@@ -16,7 +16,7 @@ services:
     container_name: python
     build: 
       context: . 
-      dockerfile: DockerfilePython
+      dockerfile: Dockerfile
     expose:
       - "8081"
     command: gunicorn -w 1 app:APP -b :8081 --reload

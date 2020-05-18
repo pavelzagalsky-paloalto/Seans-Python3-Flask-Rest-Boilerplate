@@ -16,7 +16,7 @@ SWAGGERUI_BLUEPRINT = get_swaggerui_blueprint(
     SWAGGER_URL,
     API_URL,
     config={
-        'app_name': "Seans-Python-Flask-REST-Boilerplate"
+        'app_name': "Flask-REST-Boilerplate"
     }
 )
 APP.register_blueprint(SWAGGERUI_BLUEPRINT, url_prefix=SWAGGER_URL)
@@ -53,7 +53,7 @@ def handle_500_error(_error):
 if __name__ == '__main__':
 
     PARSER = argparse.ArgumentParser(
-        description="Seans-Python-Flask-REST-Boilerplate")
+        description="Flask-REST-Boilerplate")
 
     PARSER.add_argument('--debug', action='store_true',
                         help="Use flask debug/dev mode with file change reloading")
